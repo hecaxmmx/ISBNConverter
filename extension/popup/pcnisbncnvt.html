@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+<style>
+.center-footer {
+  position: absolute;
+  left: 25%;
+  margin-left: -50px;
+}
+
+.center-body {
+  left: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+</style>
+
+<body>
+<form name="isbncnvt">
+  <div class="browser-style center-body">
+    <table cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr>
+        <th>
+    <header class="panel-section panel-section-header">
+      <div class="icon-section-header"><img src="/icons/barcode32.svg"/></div>
+      <div class="text-section-header">ISBN Converter</div>
+    </header>
+        </th>
+      </tr>
+      <tr>
+        <th align="left">
+          <p>
+          </p><ol>
+            <li>Enter a 10-digit or 13-digit ISBN in the "Original ISBN" box.</li>
+            <li>To convert with hyphenation, check the "Hyphenate ISBNs" box.</li>
+            <li>Click the "Convert ISBN" button to validate and convert the number.</li>
+          </ol>
+          <p></p>
+          <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tbody><tr>
+              <th align="right"><label for="original-isbn">Original ISBN:</label></th>
+              <th align="left">&nbsp;&nbsp;
+                <input name="isbn_in" size="45" id="original-isbn">
+              </th>
+            </tr>
+            <tr>
+              <th align="right"><label for="converted-isbn">Converted ISBN:</label></th>
+              <th align="left">&nbsp;&nbsp;
+                <input name="isbn_out" size="45" id="converted-isbn">
+              </th>
+            </tr>
+          </tbody></table>
+          <br>
+        </th>
+      </tr>
+    </tbody></table>
+  </div>
+  <br>
+  <footer class="panel-section panel-section-footer">
+    <div class="center-footer">
+      <button type="reset" class="browser-style" name="cancel">Clear Form</button>
+      &nbsp;
+      <button type="submit" class="browser-style" id="convert-isbn-button">Convert ISBN</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="hyphenate" id="hyphenate" value="Yes">
+&nbsp;<label for="hyphenate">Hyphenate ISBNs</label>
+    </div>
+  </footer>
+</form>
+<script src="pcnisbncnvt.js"></script>
+</body>
+</html>
